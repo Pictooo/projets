@@ -18,7 +18,8 @@
 }
 
 :root {
-    --color: #20B2AA;
+    --color: #aa7dda;
+    --accent-color: #f4ffc3;
     --font-family: "Bianzhidai";
 }
 
@@ -37,7 +38,7 @@ body {
     justify-content: center;
     font-family: var(--font-family);
     color: var(--color);
-    background-color: #F5CCD8;
+    background-color: #7734e3;
     overflow: hidden;
 }
 
@@ -92,15 +93,24 @@ button {
     margin: 0;
     font-family: "Bianzhidai";
     font-size: 1.5vw;
+    color: var(--color);
+    cursor: pointer;
+    background-color: transparent;
+    border: 0.2vw solid var(--color);
     cursor: pointer;
 }
 
+button:hover{
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+}
+
 .cadeau{
+    margin-top:-6.5vw;
     font-family: "Spacemono";
     font-weight: bold;
     font-size:0.3vw;
-    color: #FF004F;
-    margin-top:-6.5vw;
+    color: var(--accent-color);
 } 
 
 /* -------------------------------------------------- */
@@ -115,6 +125,12 @@ button {
     flex-direction: column;
     align-items: center;
     gap: 5vh;
+}
+
+.container-cadeau{
+    display:flex;
+    flex-direction:row;
+    gap:3.5vw;
 }
 
 /* -------------------------------------------------- */
@@ -134,7 +150,7 @@ button {
     z-index: 9999;
     font-family: "SpaceMono";
     font-size: 2.5vw;
-    color: #FF004F;
+    color: var(--accent-color);
 }
 
 /* -------------------------------------------------- */
